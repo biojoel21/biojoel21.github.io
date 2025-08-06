@@ -101,7 +101,14 @@
             
         </div>
     </main> <!--  end main -->
-
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+    	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    
+    	createChat({
+    		webhookUrl: 'https://biojoel21.app.n8n.cloud/webhook/d4a2b357-aa43-4627-9a29-9ee7dd8f98e3/chat'
+    	});
+    </script>
     <!-- Java Script
     ================================================== -->
     <script>
