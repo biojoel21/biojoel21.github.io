@@ -5,9 +5,9 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Knox - Demo</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Erick Barbosa - Senior Software Developer</title>
+    <meta name="description" content="Welcome to the professional portfolio of Erick Barbosa, a Senior Software Developer specializing in C#, Python, Full Stack development, and more.">
+    <meta name="author" content="Erick Barbosa">
 
     <!-- mobile specific metas
     ================================================== -->
@@ -15,7 +15,105 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Custom styles for the welcome page */
+        .skill-badge {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            margin: 0.4rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .skill-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .project-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #667eea;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .project-card h4 {
+            color: #36151E;
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            color: #5B5E53;
+            line-height: 1.6;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            border-color: #667eea;
+        }
+
+        .section-heading {
+            font-size: 2.5rem;
+            color: #36151E;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        .intro-tagline {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 300;
+            margin-top: 1rem;
+        }
+    </style>
 
     <!-- favicons
     ================================================== -->
@@ -40,101 +138,195 @@
     </div>
 
 
-    <!-- header 
+    <!-- intro section
     ================================================== -->
-    <header>
+    <section id="intro" class="s-intro">
+
+        <div class="s-intro__bg"></div>
+
+        <header class="s-intro__header">
+            <div class="s-intro__logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Erick Barbosa">
+                </a>
+            </div>
+        </header> <!-- end s-intro__header -->
+
+        <div class="row s-intro__content">
+            <div class="column lg-12">
+
+                <div class="s-intro__content-inner">
+                    <h1 class="text-huge-title">
+                        Erick Barbosa<span>.</span>
+                    </h1>
+                    <p class="intro-tagline">
+                        Senior Software Developer | Full Stack Engineer | Tech Innovator
+                    </p>
+                </div> <!-- s-intro__content-inner -->
+
+                <div class="s-intro__content-bottom">
+                    <div class="s-intro__content-bottom-block">
+                        <h5>Scroll to Explore</h5>
+                    </div>
+                </div> <!-- s-intro__content-bottom -->
+
+            </div> <!-- end column -->
+        </div> <!-- s-intro__content -->
+
+        <div class="s-intro__scroll">
+            <a href="#about" class="smoothscroll">
+                Scroll For More
+            </a>
+        </div> <!-- s-intro__scroll -->
+
+    </section> <!-- end s-intro -->
+
+
+    <!-- about section
+    ================================================== -->
+    <section id="about" class="s-details">
+
         <div class="row">
-            <div class="column lg-12 text-center">
-
-                <h1>KNOX<span>.</span></h1>
-
-                <p class="lead">
-                Knox is a clean, modern, and elegant free coming soon website template. Its thin line elements, 
-                great use of whitespace, and nice typography give the template a professional, classy design. 
-                It is not just aesthetically pleasing it also has the essential functions you need to maintain 
-                and engage visitors, and collect new leads while working on your website. Knox comes in three style 
-                variants: static, slideshow, and particle background.
+            <div class="column lg-12">
+                <h2 class="section-heading">About Me</h2>
+                <p class="attention-getter">
+                    Hello! I'm Erick Barbosa, a passionate Senior Software Developer with extensive experience in building 
+                    robust, scalable applications. I specialize in creating innovative solutions that drive business value 
+                    and enhance user experiences. With a strong foundation in both frontend and backend technologies, 
+                    I bring ideas to life through clean, efficient code.
                 </p>
-
+                <p class="attention-getter">
+                    My expertise spans across various domains, from developing intelligent chatbots to creating comprehensive 
+                    payroll management systems. I thrive on challenges and am constantly exploring new technologies to stay 
+                    at the forefront of software development.
+                </p>
             </div>
         </div>
-    </header> <!-- end header -->
+
+    </section> <!-- end about -->
 
 
-    <!-- main content
+    <!-- skills section
     ================================================== -->
-    <main>
-        <div class="row block-lg-one-third block-md-one-half block-tab-whole">
-           
-            <div class="column entry">
-                <div class="entry__thumb">
-                    <a href="index-static.html" title="static background">
-                        <img src="images/demo/knox-static.jpg" srcset="images/demo/knox-static.jpg 1x, images/demo/knox-static@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-                <div class="entry__title">
-                    <h3>Static Background</h3>
-                </div>
-            </div>
+    <section id="skills" class="s-details">
 
-            <div class="column entry">
-                <div class="entry__thumb">
-                    <a href="index-slides.html" title="slideshow background">
-                        <img src="images/demo/knox-slides.jpg" srcset="images/demo/knox-slides.jpg 1x, images/demo/knox-slides@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-                <div class="entry__title">
-                    <h3>Slideshow Background</h3>
+        <div class="row">
+            <div class="column lg-12">
+                <h2 class="section-heading">Technical Skills</h2>
+                <div style="margin-top: 2rem;">
+                    <span class="skill-badge">C#</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Full Stack Development</span>
+                    <span class="skill-badge">SSRS</span>
+                    <span class="skill-badge">Telerik</span>
+                    <span class="skill-badge">Visual Studio</span>
+                    <span class="skill-badge">VS Code</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Web Development</span>
+                    <span class="skill-badge">API Development</span>
+                    <span class="skill-badge">Cloud Technologies</span>
                 </div>
             </div>
-
-            <div class="column entry">
-                 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-                <script type="module">
-                	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-                
-                	createChat({
-                		webhookUrl: 'https://biojoel21.app.n8n.cloud/webhook/d4a2b357-aa43-4627-9a29-9ee7dd8f98e3/chat'
-                	});
-                </script>
-            </div>
-            
         </div>
-    </main> <!--  end main -->
-   
+
+    </section> <!-- end skills -->
+
+
+    <!-- projects section
+    ================================================== -->
+    <section id="projects" class="s-details">
+
+        <div class="row">
+            <div class="column lg-12">
+                <h2 class="section-heading">Featured Projects</h2>
+                
+                <div class="project-card">
+                    <h4>🤖 Intelligent Chatbots</h4>
+                    <p>
+                        Developed sophisticated chatbot solutions leveraging natural language processing and AI to provide 
+                        seamless customer interactions. These chatbots enhance user engagement and automate customer support, 
+                        resulting in improved efficiency and satisfaction.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h4>💼 Payroll WebApp</h4>
+                    <p>
+                        Created a comprehensive payroll management system that streamlines employee payment processes, 
+                        tax calculations, and reporting. The application features an intuitive interface, robust security, 
+                        and seamless integration with existing HR systems.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h4>🚀 Enterprise Solutions</h4>
+                    <p>
+                        Architected and implemented various enterprise-level applications using modern frameworks and 
+                        best practices. These solutions focus on scalability, maintainability, and delivering exceptional 
+                        user experiences across different platforms.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </section> <!-- end projects -->
+
+
+    <!-- contact section
+    ================================================== -->
+    <section id="contact" class="s-details">
+
+        <div class="row">
+            <div class="column lg-12">
+                <h2 class="section-heading">Let's Connect</h2>
+                <p class="attention-getter">
+                    I'm always excited to collaborate on interesting projects or discuss new opportunities. 
+                    Feel free to reach out through any of the following channels:
+                </p>
+                
+                <div class="social-links" style="margin-top: 2rem;">
+                    <a href="https://github.com/biojoel21" target="_blank" class="social-link">
+                        GitHub: @Biojoel21
+                    </a>
+                    <a href="mailto:erick@example.com" class="social-link">
+                        Email Me
+                    </a>
+                    <a href="https://linkedin.com/in/biojoel21" target="_blank" class="social-link">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="ss-copyright">
+                        <span>© 2024 Erick Barbosa</span> 
+                        <span>Senior Software Developer</span>
+                        <span>Built with passion and code</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#intro">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+                </a>
+            </div>
+
+        </footer>
+
+    </section> <!-- end contact -->
+
+
     <!-- Java Script
     ================================================== -->
-    <script>
-        
-        (function(html) {
-
-            'use strict';
-
-            html.className = html.className.replace(/\bno-js\b/g, '') + 'js';
-
-            const body = document.querySelector('body');
-            const preloader = document.querySelector('#preloader');
-
-            if (!preloader) return;
-
-            window.addEventListener('load', function() {
-
-                body.classList.remove('ss-preload');
-                body.classList.add('ss-loaded');
-
-                preloader.addEventListener('transitionend', function afterTransition(e) {
-                    if (e.target.matches('#preloader'))  {
-                        body.classList.add('ss-show');
-                        e.target.style.display = 'none';
-                        preloader.removeEventListener(e.type, afterTransition);
-                    }
-                });
-
-            });
-
-        })(document.documentElement);
-    
-    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
